@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <Target Name="RollupBundle" AfterTargets="WebSharperCompile">
-    <Exec Command="npx rollup -c" />
+    <Exec Command="node ./esbuild.config.mjs" />
   </Target>
 
   <ItemGroup>
